@@ -1,5 +1,5 @@
 <?php
-$host = "sql201.infinityfree.com"; // Trung kiểm tra lại số này trong MySQL Details
+$host = "sql204.infinityfree.com"; // Trung kiểm tra lại số này trong MySQL Details
 $user = "if0_40712621";            // Username từ ảnh image_cc89ae.png
 $pass = "klQM2OM8uldYT66";         // Password từ ảnh image_cc7e51.png
 $db   = "if0_40712621_project2";   // Bạn cần vào Control Panel -> MySQL Databases tạo tên này trước
