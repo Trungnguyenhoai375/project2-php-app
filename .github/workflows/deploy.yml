@@ -18,3 +18,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
           server-dir: /htdocs/ # Thư mục web bắt buộc của InfinityFree
+          state-name: .ftp-deploy-sync-state.json
