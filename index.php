@@ -32,7 +32,7 @@ $result = mysqli_query($conn, "SELECT * FROM users ORDER BY id DESC");
 </head>
 <body>
     <div class="card">
-        <h2>🚀 Project 2: Kết nối MySQL Thành công!</h2>
+        <h2> Project 2: Kết nối MySQL Thành công!</h2>
         <form method="POST">
             <input type="text" name="name" placeholder="Tên học viên" required>
             <input type="email" name="email" placeholder="Email" required>
