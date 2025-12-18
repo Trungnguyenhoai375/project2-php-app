@@ -1,7 +1,7 @@
 <?php 
 include 'db.php'; 
 
-// Xử lý khi nhấn nút Thêm (Dùng hàm mysqli)
+// Xử lý khi nhấn nút Thêm (Đã sửa sang MySQL)
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['name']) && isset($_POST['email'])) {
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['name']) && isset($_POS
     exit;
 }
 
-// Lấy danh sách user (Dùng hàm mysqli)
+// Lấy danh sách user (Đã sửa sang MySQL)
 $result = mysqli_query($conn, "SELECT * FROM users ORDER BY id DESC");
 ?>
 
@@ -36,7 +36,7 @@ $result = mysqli_query($conn, "SELECT * FROM users ORDER BY id DESC");
 <body>
     <div class="card">
         <h1>Project 2: PHP & MySQL</h1>
-        <p style="text-align: center;">Triển khai CI/CD lên InfinityFree</p>
+        <p style="text-align: center;">Triển khai CI/CD thành công!</p>
         
         <form method="POST">
             <input type="text" name="name" placeholder="Nhập tên học viên" required>
@@ -56,7 +56,7 @@ $result = mysqli_query($conn, "SELECT * FROM users ORDER BY id DESC");
                           </li>";
                 }
             } else {
-                echo "<li>Chưa có dữ liệu người dùng.</li>";
+                echo "<li>Chưa có dữ liệu. Hãy thêm người đầu tiên!</li>";
             }
             ?>
         </ul>
