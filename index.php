@@ -1,7 +1,6 @@
 <?php 
 include 'db.php'; 
 
-// Xử lý khi nhấn nút Thêm (Dùng cho MySQL)
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['name']) && isset($_POST['email'])) {
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -13,7 +12,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['name']) && isset($_POS
     exit;
 }
 
-// Lấy danh sách user (Dùng cho MySQL)
 $result = mysqli_query($conn, "SELECT * FROM users ORDER BY id DESC");
 ?>
 
